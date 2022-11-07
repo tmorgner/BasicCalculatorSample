@@ -21,3 +21,7 @@ to enable a discussion about the various trade-offs inherent in the designs.
   The fastest way to an implementation is the implementation you don't have to 
   write yourself. This calculator trades control over the execution against 
   performance and developer time.
+
+Note: The scripting calculator relies on the 'javascript' scripting engine usually 
+included in the JDK. In OpenJDK 16 this engine was removed, but continues to be  
+available in many other JDKs, like Azuul 19. 

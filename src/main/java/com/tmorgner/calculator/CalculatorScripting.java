@@ -18,6 +18,9 @@ public class CalculatorScripting implements Calculator {
   public CalculatorScripting() {
     final ScriptEngineManager manager = new ScriptEngineManager();
     engine = manager.getEngineByMimeType("application/javascript");
+    if (engine == null) {
+      throw new IllegalStateException("This JDK does not support 'javascript' scripting.");
+    }
   }
 
   @Override
